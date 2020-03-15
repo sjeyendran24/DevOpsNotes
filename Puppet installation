@@ -80,7 +80,16 @@ mode => '0644',
 
 Goto client machine and run the command
 puppet agent --test
+puppet describe resource package
+puppet describe resource package --providers
+puppet config print ssldir
+puppet config print
 
+Agent config for automatic run
+vi /etc/puppet/puppet.conf
+[agent]
+ 
+runinterval=1m
 
 ---Variable
 
